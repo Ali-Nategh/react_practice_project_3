@@ -20,7 +20,7 @@ export default function Meme() {
 
         setMeme(prevMeme => ({
             ...prevMeme,
-            randomImage: meme.url
+            randomImage: meme['url']
         })) 
     }
 
