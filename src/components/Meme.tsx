@@ -14,13 +14,14 @@ export default function Meme() {
             .then(data => setAllMemes(data.data.memes))
     }, [])
 
-    function getMemeImage() {
+    function getMemeImage(): void {
         const randomNumber = Math.floor(Math.random() * allMemes.length)
-        const url = allMemes[randomNumber].url
+        const meme = allMemes[randomNumber]
+
         setMeme(prevMeme => ({
             ...prevMeme,
-            randomImage: url
-        }))
+            randomImage: meme.url
+        })) 
     }
 
     function handleChange(event: any) {
@@ -59,7 +60,7 @@ export default function Meme() {
                 </button>
             </div>
             <div className="meme">
-                <img src={meme.randomImage} className="meme--image" />
+                {meme.randomImage !== "" && <img src={meme.randomImage} className="meme--image" />}
                 <h2 className="meme--text top">{meme.topText}</h2>
                 <h2 className="meme--text bottom">{meme.bottomText}</h2>
             </div>
