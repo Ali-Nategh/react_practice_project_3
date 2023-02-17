@@ -2,7 +2,7 @@
 
 <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/react.svg">
 <img src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/react.svg" alt="Node" align=left width=24></picture>
-Meme Generator Website using React.
+Meme Generator Website using React and Vite.
 
 #
 
