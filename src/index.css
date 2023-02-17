@@ -69,7 +69,9 @@ main {
 
 .meme--image {
   max-width: 100%;
-  height: 70vh;
+  min-height: 20vh;
+  min-width: 25vh;
+  max-height: 60vh;
   border: 1px solid #711F8D;
   box-shadow: 0px 1px 5px #9d57b4;
   border-radius: 3px;
